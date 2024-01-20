@@ -53,3 +53,13 @@ Homework for the course Kotlin
 Написать функции для подсчета общего количества человек, работающих в заданной компании и их среднего возраста
 fun totalNumberOfEmployees(company: Company): Int
 fun averageAgeOfEmployees(company: Company): Int
+
+Напишите функции, которые должны принимать на вход список пользователей и лямбда выражение:
+13. Функцию преобразования каждого элемента в String в соответствии с заданным лямбда-выражением
+fun convertToStrings(users: List<User>, conversion: (User) -> String): List<String>
+
+14. Функцию, которая отвечает на вопрос присутствует ли в коллекции элемент, который удовлетворяет условиям
+fun containsElement(users: List<User>, condition: (User) -> Boolean): Boolean
+
+15. Функцию, которая возвращает количество элементов, удовлетворяющих условию:
+fun elementsCount(users: List<User>, condition: (User) -> Boolean): Int
