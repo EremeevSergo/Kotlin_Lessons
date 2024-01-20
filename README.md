@@ -55,6 +55,7 @@ fun totalNumberOfEmployees(company: Company): Int
 fun averageAgeOfEmployees(company: Company): Int
 
 Напишите функции, которые должны принимать на вход список пользователей и лямбда выражение:
+
 13. Функцию преобразования каждого элемента в String в соответствии с заданным лямбда-выражением
 fun convertToStrings(users: List<User>, conversion: (User) -> String): List<String>
 
