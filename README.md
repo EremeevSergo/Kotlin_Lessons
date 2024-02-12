@@ -109,6 +109,7 @@ fun elementsCount(users: List<User>, condition: (User) -> Boolean): Int
       println("Сотрудник ${name}: звоню клиенту $clientName")
      }
    }
+   
 Написать функцию
 fun findEmployeeBySalary(employees: List<SomeEmployee>, age: Int): SomeEmployee?
 которая ищет в списке сотрудников сотрудника с заданной зарплатой.
