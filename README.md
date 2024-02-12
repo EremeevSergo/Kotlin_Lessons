@@ -96,3 +96,32 @@ fun elementsCount(users: List<User>, condition: (User) -> Boolean): Int
 Сделайте так, чтобы класс Figure из предыдущего задания реализовывал интерфейс Movable
 Создайте класс Animal с полями name: String, x: Int, y: Int, который также будет реализовывать интерфейс Movable.
 Создайте коллекцию перемещаемых объектов среди которых будут разные геометрические фигуры и животные. Переместить все элементы коллекции вправо на 10 шагов
+
+-------------------Работа с null----------------------------
+
+21. Есть класс:
+   class SomeEmployee(
+     val name: String,
+     val salary: Int
+   ) {
+     fun callToClient(clientName: String) {
+      println("Сотрудник ${name}: звоню клиенту $clientName")
+     }
+   }
+Написать функцию
+fun findEmployeeBySalary(employees: List<SomeEmployee>, age: Int): SomeEmployee?
+которая ищет в списке сотрудников сотрудника с заданной зарплатой.
+Сделайте так, чтобы функция возвращала null в случае если такого сотрудника в списке нет
+Создать произвольный список сотрудников. Используя эту функцию найти в списке сотрудника с определенной зарплатой.
+Вызвать у него функцию callToClient, используя безопасный вызов (?)
+
+22.  Есть классы:
+    
+class Address(val address: String, val city: String)
+class Company(val name: String, val address: Address?)
+class Employee(val name: String, val company: Company?)
+
+Напишите функцию fun employeeCity(employee: Employee): String, которая возвращает название города,
+в которой располагается организация, в которой работает данный человек.
+В случае если он нигде не работает (в company лежит null), функция должна выводить: «Неизвестен»
+Используйте функции безопасного вызова и оператор элвис
