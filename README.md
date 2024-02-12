@@ -100,6 +100,7 @@ fun elementsCount(users: List<User>, condition: (User) -> Boolean): Int
 -------------------Работа с null----------------------------
 
 21. Есть класс:
+    
    class SomeEmployee(
      val name: String,
      val salary: Int
@@ -115,7 +116,7 @@ fun findEmployeeBySalary(employees: List<SomeEmployee>, age: Int): SomeEmployee?
 Создать произвольный список сотрудников. Используя эту функцию найти в списке сотрудника с определенной зарплатой.
 Вызвать у него функцию callToClient, используя безопасный вызов (?)
 
-22.  Есть классы:
+23.  Есть классы:
     
 class Address(val address: String, val city: String)
 class Company(val name: String, val address: Address?)
